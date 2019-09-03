@@ -14,10 +14,19 @@
 
 <body>
     <% include ./inc/nav.ejs%>
-    
-    <div>
-        
+
+    <div class="container">
+        <form action="/crud/create" method="POST">
+            <label for="title">제목 : </label>
+            <input type="text" id="title" name="title" class="form-control"><br>
+            <label for="content">내용 : </label><br>
+            <textarea id="content" class="form-control" rows="5" name="content"></textarea>
+            <br>
+            <button type="submit" class="btn btn-dark">할 일 작성</button>
+        </form>
+
     </div>
+
 
 </body>
 

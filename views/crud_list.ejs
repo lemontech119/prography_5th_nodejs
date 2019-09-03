@@ -14,9 +14,19 @@
 
 <body>
     <% include ./inc/nav.ejs%>
-    
-    <div>
-        
+    <div class="container">
+        <h1>Crud List</h1>
+        <table class="table table-striped">
+            <tr>
+                <th>제목</th>
+            </tr>
+            <% for(let i=0; i < counts; i++) {%>
+            <tr>
+                <td><a href="/crud/read?title=<%= posts[i].title %>"><%=posts[i].title%></a></td>
+            </tr>
+            <% } %>
+        </table>
+        <a href="/crud/create"><button type="button" class="btn btn-dark">할 일 작성</button></a>
     </div>
 
 </body>

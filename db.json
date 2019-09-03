@@ -1,4 +1,13 @@
 {
-  "board": [],
+  "board": [
+    {
+      "title": "default데이터1",
+      "content": "내용1"
+    },
+    {
+      "title": "sdsds",
+      "content": "sdsd"
+    }
+  ],
   "user": {}
 }
