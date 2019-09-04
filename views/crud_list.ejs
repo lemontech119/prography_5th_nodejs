@@ -19,10 +19,12 @@
         <table class="table table-striped">
             <tr>
                 <th>제목</th>
+                <th>작성자</th>
             </tr>
             <% for(let i=0; i < counts; i++) {%>
             <tr>
                 <td><a href="/crud/read?title=<%= posts[i].title %>"><%=posts[i].title%></a></td>
+                <td><%= posts[i].user %></td>
             </tr>
             <% } %>
         </table>

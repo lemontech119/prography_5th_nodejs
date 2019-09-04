@@ -7,6 +7,7 @@ let router = express.Router();
 
 // Todo 리스트
 router.get("/", (req, res) => {
+    
     const posts = db.get("board").value();
     const counts = db.get("board").size().value();
     console.log("crud list 입장");
@@ -23,11 +24,17 @@ router.get("/create", (req, res) => {
 });
 
 router.post("/create", (req, res) => {
+    if(req.session.user){
+        var user = req.session.user;
+    }else{
+        var user = "Not Login";
+    }
     const add_title = req.body.title;
     const add_content = req.body.content;
     db.get("board").push({
         title : add_title,
-        content : add_content
+        content : add_content,
+        user: user
     }).write();
 
     res.redirect("/crud");
@@ -62,6 +69,7 @@ router.delete("/delete", (req, res) =>{
 
 // Todo update
 router.get("/update", (req, res) =>{
+    
     let update_title = req.query.title;
     const post = db.get("board")
     .find({title: update_title})

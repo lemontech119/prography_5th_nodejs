@@ -2,16 +2,45 @@
   "board": [
     {
       "title": "CRUD 만들기",
-      "content": "Create, read, update, delete"
+      "content": "Create, read, update, delete",
+      "user": "Not Login"
     },
     {
       "title": "Readme 파일 정리",
-      "content": "완료"
+      "content": "완료",
+      "user": "Not Login"
     },
     {
       "title": "간단한 수정",
-      "content": "해야됨"
+      "content": "해야됨",
+      "user": "Not Login"
+    },
+    {
+      "title": "로그인 테스트",
+      "content": "작성 글 변경 시 작성자 바뀌는 거 체크",
+      "user": "test123"
+    },
+    {
+      "title": "로그인, 회원가입, 로그아웃 테스트",
+      "content": "시간 문제상 간단하게 작업...",
+      "user": "test123"
+    },
+    {
+      "title": "제출 전 수정 테스트",
+      "content": "12344",
+      "user": "test123"
+    },
+    {
+      "title": "test123",
+      "content": "12341",
+      "user": "test123"
     }
   ],
-  "user": {}
+  "user": [
+    {
+      "userID": "test123",
+      "email": "test@test.com",
+      "password": "1234"
+    }
+  ]
 }
