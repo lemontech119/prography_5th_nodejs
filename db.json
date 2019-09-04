@@ -1,12 +1,16 @@
 {
   "board": [
     {
-      "title": "default데이터1",
-      "content": "내용1"
+      "title": "CRUD 만들기",
+      "content": "Create, read, update, delete"
     },
     {
-      "title": "sdsds",
-      "content": "sdsd"
+      "title": "Readme 파일 정리",
+      "content": "완료"
+    },
+    {
+      "title": "간단한 수정",
+      "content": "해야됨"
     }
   ],
   "user": {}
